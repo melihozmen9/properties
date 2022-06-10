@@ -11,9 +11,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        var deneme = userinfo(name: "melih", age: 25)
+        print(deneme)
+        
     }
 
 
 }
 
+struct userinfo {
+    let name:String
+    var age:Int
+}
