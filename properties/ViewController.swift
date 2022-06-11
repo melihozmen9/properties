@@ -13,7 +13,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         var deneme = userinfo(name: "melih", age: 25)
-        print(deneme)
+        print(deneme.age)
+        
+        // deneme.name="can"
+        deneme.age = 26
+        print(deneme.age)
         
     }
 
@@ -21,6 +25,6 @@ class ViewController: UIViewController {
 }
 
 struct userinfo {
-    let name:String
-    var age:Int
+    let name:String // let ile tanımlandığı için sabit bir değer ve değiştirilemez.
+    var age:Int // var ile tanımlandığı için değeri değiştirilebilir.
 }
